@@ -1,0 +1,24 @@
+tiny-ui-gate  fixtures=8 (example data)
+
+id            label                      result   pass     detail
+------------------------------------------------------------------------------------------------
+valid         valid UI tree             accept   first    type=Card
+unknown-comp  unknown component         reject   repair   $.type: unknown component "MagicWidget"...
+bad-action    form action off allowlist accept   repair   type=Form
+raw-js        button with raw JS        accept   repair   type=Button
+missing-prop  missing required props    accept   repair   type=Chart
+depth-bomb    depth bomb                accept   repair   type=Stack
+bad-series    chart non-numeric series  accept   repair   type=Chart
+extra-props   unknown props stripped    accept   repair   type=Text
+
+== metrics ==
+pass@1       0.13  (1/8)
+pass@repair  0.88  (7/8)
+reject rate  0.13  (1/8)
+
+gate: SHIP  (pass@repair >= 0.75 required)
+
+== catalog ==
+components: Text, Button, Input, Form, Chart, Card, Stack
+max depth: 4
+action allowlist size: 5

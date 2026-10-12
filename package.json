@@ -1,0 +1,18 @@
+{
+  "name": "tiny-ui-gate",
+  "version": "1.0.0",
+  "description": "Tiny TypeScript UI component gate for model-emitted interface trees. Allowlist, validate, one repair, reject.",
+  "main": "gate.ts",
+  "scripts": {
+    "start": "tsx gate.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["ai", "ui", "typescript", "allowlist", "agent"],
+  "author": "Bobby Hall Jr",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
