@@ -32,6 +32,7 @@ Schema gates validate JSON decisions. This validates a **UI tree** before you mo
 ## Write-up
 
 - Dev.to: https://dev.to/bobbyhalljr/your-model-just-invented-a-form-build-a-tiny-ui-component-gate-in-typescript-h80
+- Substack: https://bobbyhalljr.substack.com/p/your-model-just-invented-a-form-build
 
 ## License
 
